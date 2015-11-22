@@ -1,0 +1,1 @@
+var Singleton = require('../../singleton');

@@ -1,0 +1,35 @@
+{
+  "name": "stupid-singleton",
+  "version": "1.0.0",
+  "description": "A singleton creater for JS (browserify)",
+  "main": "./singleton",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp": "^3.9.0",
+    "stupid-event": "^1.0.3",
+    "vinyl-buffer": "^1.0.0",
+    "tape": "^4.2.2",
+    "tap-prettify": "^0.0.2",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.6.1"
+    },
+  "scripts": {
+    "test": "tap-prettify test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StupidStudio/stupid-singleton.git"
+  },
+  "author": "David Adalberth Andersen <david@stupid-studio.com> (http://stupid-studio.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StupidStudio/stupid-singleton/issues"
+  },
+  "homepage": "https://github.com/StupidStudio/stupid-singleton#readme"
+}
