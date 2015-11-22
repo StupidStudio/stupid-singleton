@@ -12,7 +12,7 @@
 function Singleton(moduleConstructor){
     /**
      * Returns a self-execution function that returns an object
-     * @example var module = Singleton(ModuleConstructor).getInstance(); 
+     * @example var Module = Singleton(ModuleConstructor); var mod = Module.getInstance();
      * @config {object} instance An object that holds the module
      * @return {objcet} An object that returns the module via .getInstance()
      */
@@ -47,4 +47,15 @@ module.exports = Singleton;
 },{}],2:[function(require,module,exports){
 var Singleton = require('../../singleton');
 
+function moduleConstructor(opts){
+	var self = {};
+	var opts = opts || {};
+	self.name = "I am module";
+	self.opts = opts;
+	return self;
+}
+var Module = Singleton(moduleConstructor); 
+var mod1 = Module.getInstance({type: "Sexy module"});
+var mod2 = Module.getInstance({type: "Boring module"});
+console.log(mod1.opts, mod2.opts);
 },{"../../singleton":1}]},{},[2]);
